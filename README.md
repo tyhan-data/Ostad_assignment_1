@@ -1,2 +1,2 @@
-# Ostad_assignment_1
+# Ostad_assignment
 My first assignment of Ostad in gitHub.
