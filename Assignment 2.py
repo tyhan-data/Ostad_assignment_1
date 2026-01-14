@@ -1,7 +1,8 @@
 #Assignment on Module 2
 
-# 1. Write a Python program that takes a list of numbers as input, removes duplicates using a suitable list method, and returns a dictionary containing the original list, the unique values, and their count. Use a function with parameters and a return statement to perform this task.
-f
+# 1. Write a Python program that takes a list of numbers as input, removes duplicates using a suitable list method,and returns a dictionary containing the original list,
+the unique values, and their count. Use a function with parameters and a return statement to perform this task.
+
 
 def removes_duplicates(numbers):
 
@@ -28,7 +29,8 @@ print(removes_duplicates(numbers))
 
 
 
-# 2. Create a function that accepts two sets as parameters and returns their union, intersection, and difference. Use keyword arguments with default parameter values so the function can work even if one of the sets is not provided by the user. Display the results clearly.
+# 2. Create a function that accepts two sets as parameters and returns their union, intersection, and difference.
+Use keyword arguments with default parameter values so the function can work even if one of the sets is not provided by the user. Display the results clearly.
 
 
 def set_operation(set1, set2 ={3,4,2,5}):
@@ -55,7 +57,8 @@ print("Difference :", d)
 
 
 
-# 3. Define a tuple containing mixed data types, unpack its values into separate variables, and compare them with another tuple using comparison operators. Then, explain in code comments the main difference between lists and tuples in Python.
+# 3. Define a tuple containing mixed data types, unpack its values into separate variables, and compare them with another tuple using comparison operators.
+Then, explain in code comments the main difference between lists and tuples in Python.
 
 
 tuple_1 = ("Tyhan hasan", 'Abid hasan',55, 42, 3.85, 3.42)
@@ -86,6 +89,7 @@ print(tuple_1 <= tuple_2)
 # 3. Performance:
 #    - Tuple faster than list 
 #    - Suitable for fixed data
+
 
 
 
