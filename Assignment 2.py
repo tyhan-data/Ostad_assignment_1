@@ -1,7 +1,7 @@
 #Assignment on Module 2
 
 # 1. Write a Python program that takes a list of numbers as input, removes duplicates using a suitable list method, and returns a dictionary containing the original list, the unique values, and their count. Use a function with parameters and a return statement to perform this task.
-
+f
 
 def removes_duplicates(numbers):
 
@@ -86,6 +86,7 @@ print(tuple_1 <= tuple_2)
 # 3. Performance:
 #    - Tuple faster than list 
 #    - Suitable for fixed data
+
 
 
 
