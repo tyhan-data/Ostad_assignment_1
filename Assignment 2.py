@@ -5,55 +5,46 @@ the unique values, and their count. Use a function with parameters and a return 
 
 
 def removes_duplicates(numbers):
-
-    # removing duplicates by set() method.(optional)
-    unique_n = list(set(numbers))
-
-    # without set() method.
+    # Remove duplicates without changing the original order
     unique_num = list(dict.fromkeys(numbers))
 
-    # create a dictionary..
+    # Create a dictionary with original list, unique values, and count
     my_dict = {
-      "Original_list": numbers ,
-      "Unique values": unique_num,
-      "Count": len(unique_num)
+        "Original_list": numbers,
+        "Unique values": unique_num,
+        "Count": len(unique_num)
     }
 
     return my_dict
 
-# Take a list from user.
-numbers = list(map(int,input('Enter numbers :').split()))
+# Take input from user
+numbers = list(map(int, input('Enter numbers (space separated): ').split()))
 
-# call the fucntion.
+# Call the function and display results
 print(removes_duplicates(numbers))
-
 
 
 # 2. Create a function that accepts two sets as parameters and returns their union, intersection, and difference.
 Use keyword arguments with default parameter values so the function can work even if one of the sets is not provided by the user. Display the results clearly.
 
 
-def set_operation(set1, set2 ={3,4,2,5}):
-      
-      # Union operation..
-      result1 = set1.union(set2)
-     
-      # Intersection operation..
-      result2  = set1 & set2
-      
-      # Difference operation..
-      result3 = set1 - set2
-       
-     # Return the results..
-      return result1 , result2 ,result3
-      
-# unpack the results..
-u , i , d =set_operation({3,4,23,53,5})
+def set_operation(set1, set2={3, 4, 2, 5}):
+    # Union
+    union_result = set1.union(set2)
+    # Intersection
+    intersection_result = set1 & set2
+    # Difference
+    difference_result = set1 - set2
 
-# Display the results clearly..
-print("Union :", u)
-print("Intersection :", i)
-print("Difference :", d)
+    return union_result, intersection_result, difference_result
+
+# Example usage
+union, intersection, difference = set_operation({3, 4, 23, 53, 5})
+
+print("\nSet Operations Results:")
+print("Union:", union)
+print("Intersection:", intersection)
+print("Difference:", difference)
 
 
 
@@ -61,33 +52,33 @@ print("Difference :", d)
 Then, explain in code comments the main difference between lists and tuples in Python.
 
 
-tuple_1 = ("Tyhan hasan", 'Abid hasan',55, 42, 3.85, 3.42)
+tuple_1 = ("Tyhan hasan", 'Abid hasan', 55, 42, 3.85, 3.42)
 
-# Unpacking the tuple..
+# Unpacking tuple
 (a, b, c, d, e, f) = tuple_1
 
-tuple_2 = ("Tyhan hasan", 'Abid hasan',55, 42, 3.85, 3.42)
+tuple_2 = ("Tyhan hasan", 'Abid hasan', 55, 42, 3.85, 3.42)
 
-# compare touple..
-print(tuple_1 == tuple_2)
-print(tuple_1 != tuple_2)
-print(tuple_1 < tuple_2)
-print(tuple_1 > tuple_2)
-print(tuple_1 >= tuple_2)
-print(tuple_1 <= tuple_2)
+# Comparison operators
+print("\nTuple Comparisons:")
+print("Equal:", tuple_1 == tuple_2)
+print("Not Equal:", tuple_1 != tuple_2)
+print("Less than:", tuple_1 < tuple_2)
+print("Greater than:", tuple_1 > tuple_2)
+print("Greater than or equal:", tuple_1 >= tuple_2)
+print("Less than or equal:", tuple_1 <= tuple_2)
 
-# Main differences between lists and tuples:
-
+# -----------------------------
+# Differences between List and Tuple
+# -----------------------------
 # 1. Mutability:
-#    - List: mutable → elements change করা যায়
-#    - Tuple: immutable → elements change করা যায় না
-
+#    - List: mutable → elements can be changed
+#    - Tuple: immutable → elements cannot be changed
 # 2. Syntax:
 #    - List: []
 #    - Tuple: ()
-
 # 3. Performance:
-#    - Tuple faster than list 
+#    - Tuple is faster than list
 #    - Suitable for fixed data
 
 
