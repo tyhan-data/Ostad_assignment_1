@@ -1,4 +1,6 @@
-# Q1. Create a Python class representing a student with attributes such as name and ID, and include both a default constructor and a parameterized constructor. Add a method to display the student details, and use the pass statement inside an empty placeholder method. Then create multiple objects from this class to test each constructor.
+# Q1. Create a Python class representing a student with attributes such as name and ID,
+and include both a default constructor and a parameterized constructor.Add a method to display the student details, 
+and use the pass statement inside an empty placeholder method. Then create multiple objects from this class to test each constructor.
 
 
 class Student :
@@ -20,7 +22,8 @@ student_2.display()
 
 
 
-# Q2. Write a Python program demonstrating single, multilevel, and hierarchical inheritance using simple classes such as Person, Student, and Teacher. Include at least one overridden method in the child classes to show method overriding.
+# Q2. Write a Python program demonstrating single, multilevel, and hierarchical inheritance using simple classes such as Person, Student, and Teacher.
+Include at least one overridden method in the child classes to show method overriding.
 
 
 class Person :
@@ -55,7 +58,9 @@ obj3.introduce()
 
 
 
-# Q3. Define a class that shows encapsulation by using private attributes and public getter/setter methods. Add two methods with the same name but different parameter counts to illustrate method overloading (using default arguments). Then create another class to demonstrate multiple inheritance.
+# Q3. Define a class that shows encapsulation by using private attributes and public getter/setter methods. 
+Add two methods with the same name but different parameter counts to illustrate method overloading (using default arguments). 
+Then create another class to demonstrate multiple inheritance.
 
 
 class Father :
@@ -87,5 +92,6 @@ print(child.get_money())
 
 child.display_info(' housewife ', 'work')
 child.display_info('Serial', 'like')
+
 
 
